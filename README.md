@@ -38,4 +38,10 @@ uvicorn main:app --reload
 ```
 
 You should be able to access the API via an internet browser. The application will tell you the local IP it's hosted on.
+## Running React
 
+While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
+
+`npm start`
+
+Open http://localhost:3000 to view website in your browser.
