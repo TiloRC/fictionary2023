@@ -49,7 +49,8 @@ Open http://localhost:3000 to view website in your browser.
 
 
 
-## Handeling Branches
+
+## Handling Branches
 ---------------
 
 We want to use branches to keep everything organized and safe.
