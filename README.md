@@ -2,11 +2,6 @@
 
 fictionary.net would be a wordle-like game based on the game https://en.wikipedia.org/wiki/Fictionary.  Each day there's a new obscure word, and the game is to identify which out of 5 definitions is correct.
 
-
-
-
-
-
 Running the API
 ---------------
 
@@ -34,7 +29,7 @@ pip install uvicorn
 
 Now, run the API via uvicorn:
 ```bash
-uvicorn main:app --reload
+uvicorn api:app --reload
 ```
 
 You should be able to access the API via an internet browser. The application will tell you the local IP it's hosted on.
