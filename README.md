@@ -38,6 +38,7 @@ You should be able to access the API via an internet browser. The application wi
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
 ``bash
-npm start``
+npm start
+``
 
 Open http://localhost:3000 to view website in your browser.
