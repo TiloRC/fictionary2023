@@ -10,3 +10,5 @@ fictionary.net would be a wordle-like game based on the game https://en.wikipedi
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
 `npm start`
+
+Open http://localhost:3000 to view website in your browser.
