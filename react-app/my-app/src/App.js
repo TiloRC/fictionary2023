@@ -16,7 +16,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React cooolio!
+
+          Learn React!!
 
           <MyComponent/>
 
@@ -32,7 +33,7 @@ function App() {
 class MyComponent extends React.Component {
 
   state = {
-    data: "default data"
+    data: "default data: backend server could not be reached"
   }
 
   componentDidMount() {
