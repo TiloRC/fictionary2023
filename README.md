@@ -37,10 +37,22 @@ You should be able to access the API via an internet browser. The application wi
 
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
-`npm start`
+```bash
+npm start
+```
+
+
+
 
 Open http://localhost:3000 to view website in your browser.
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> main
 ## Handling Branches
 ---------------
 
@@ -80,3 +92,7 @@ If you need to do work using the changes you just made that you want merged with
 If you have any questions about any of the steps above, ask Max.
 
 p.s. Is this process cumbersome? Yes. Is it necessary for this project? Probably not. Is it what I (Max) did for my real world job? Yes. This is why I want to practice with these hoops to jump through since this may very well be how it is at a real job.
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
