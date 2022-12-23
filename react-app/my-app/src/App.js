@@ -41,13 +41,14 @@ class MyComponent extends React.Component {
       .then(response => response.json())
       .then(data => {
         console.log('hi')
+        console.log(data)
         this.setState({data});
       });
   }
   render() {
     return (
       <div>
-        {this.state.data}
+        {JSON.stringify(this.state.data)}
       </div>
     );
   }
