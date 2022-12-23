@@ -1,8 +1,18 @@
-from fastapi import FastAPI
 from structures import Game
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 game: Game = None
+
+app.add_middleware(
+    CORSMiddleware, 
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 @app.get('/')
 def read_root():
