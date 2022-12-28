@@ -2,6 +2,12 @@
 
 fictionary.net would be a wordle-like game based on the game https://en.wikipedia.org/wiki/Fictionary.  Each day there's a new obscure word, and the game is to identify which out of 5 definitions is correct.
 
+
+
+# Getting Started 
+
+To get started, clone this repo and then follow the instructions for running the api and the react frontend. You'll need two terminal windows: one for the api and one for the frontend. Make sure each terminal window is in the correct directory, fictionary2023. 
+
 Running the API
 ---------------
 
@@ -33,7 +39,27 @@ uvicorn api:app --reload
 ```
 
 You should be able to access the API via an internet browser. The application will tell you the local IP it's hosted on.
-## Running React
+
+
+
+Running the React Frontend
+--------------------------
+### Setting up
+
+Go to https://nodejs.org/en/ and install the latest version of Node. We'll need this so that we can use the npm package manager. 
+
+```bash
+npm i -g create-react-app
+```
+Feel free to omit the "-g"
+
+
+Then while at "fictionary2023" run the folowing code in your terminal:
+
+the above line of code is probably not necesary but it will ensure that you don't have any dependency issues. 
+
+### Getting things running
+
 
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
