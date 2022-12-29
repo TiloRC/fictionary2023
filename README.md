@@ -61,6 +61,8 @@ the above line of code is probably not necesary but it will ensure that you don'
 ### Getting things running
 
 
+=======
+
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
 ```bash
@@ -70,7 +72,9 @@ npm start
 
 
 
+
 Open http://localhost:3000 to view website in your browser.
+
 
 
 ## Handling Branches

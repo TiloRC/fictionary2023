@@ -11,7 +11,6 @@ function App() {
         Fictionary
 
 
-
       </header>
   
     </div>
