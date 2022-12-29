@@ -1,5 +1,8 @@
+
 import "./App.css";
 import DefList from "./components/defList";
+import './index.css';
+
 
 function App() {
   return (
