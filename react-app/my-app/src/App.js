@@ -1,47 +1,16 @@
-import './App.css';
-
-
+import "./App.css";
+import DefList from "./components/defList";
 
 function App() {
   return (
     <div className="App">
-      
-      <div className="App-header">
-        Fictionary
-      </div>
+      <header className="App-header">Fictionary</header>
 
       <div>
-        <div className="App-dailyWord">
-          Tibo
-        </div>
+        <div className="App-dailyWord">[Daily Word]</div>
 
-        <div>
-
-          <button className="App-definitions" type="button" onClick={ () =>{ alert('inline alert');} } >
-            A smart fella
-          </button>
-
-          <button className="App-definitions" type="button" onClick={ () =>{ alert('inline alert2');}} >
-            A fart smella
-          </button>
-
-          <button className="App-definitions" type="button" onClick={ () =>{ alert('inline alert3');} } >
-            Resedent stem major
-          </button>
-
-          <button className="App-definitions" type="button" onClick={ () =>{ alert('inline alert4');} } >
-            mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-          </button>
-
-          <button className="App-definitions" type="button" onClick={ () =>{ alert('inline alert5');} } >
-            uh oh need to wrap stuff
-          </button>
-          
-        </div>
-
+        <DefList />
       </div>
-    
-  
     </div>
   );
 }
