@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
 function App() {
   return (
@@ -15,11 +16,42 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+
+          Learn React!!
+
+          <MyComponent/>
+
         </a>
       </header>
     </div>
   );
+}
+
+
+
+
+class MyComponent extends React.Component {
+
+  state = {
+    data: "default data: backend server could not be reached"
+  }
+
+  componentDidMount() {
+    fetch('http://127.0.0.1:8000')
+      .then(response => response.json())
+      .then(data => {
+        console.log('hi')
+        console.log(data)
+        this.setState({data});
+      });
+  }
+  render() {
+    return (
+      <div>
+        {JSON.stringify(this.state.data)}
+      </div>
+    );
+  }
 }
 
 export default App;
