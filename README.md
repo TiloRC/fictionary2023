@@ -2,6 +2,12 @@
 
 fictionary.net would be a wordle-like game based on the game https://en.wikipedia.org/wiki/Fictionary.  Each day there's a new obscure word, and the game is to identify which out of 5 definitions is correct.
 
+
+
+# Getting Started 
+
+To get started, clone this repo and then follow the instructions for running the api and the react frontend. You'll need two terminal windows: one for the api and one for the frontend. Make sure each terminal window is in the correct directory, fictionary2023. 
+
 Running the API
 ---------------
 
@@ -33,13 +39,43 @@ uvicorn api:app --reload
 ```
 
 You should be able to access the API via an internet browser. The application will tell you the local IP it's hosted on.
-## Running React
+
+
+
+Running the React Frontend
+--------------------------
+### Setting up
+
+Go to https://nodejs.org/en/ and install the latest version of Node. We'll need this so that we can use the npm package manager. 
+
+```bash
+npm i -g create-react-app
+```
+Feel free to omit the "-g"
+
+
+Then while at "fictionary2023" run the folowing code in your terminal:
+
+the above line of code is probably not necesary but it will ensure that you don't have any dependency issues. 
+
+### Getting things running
+
+
+=======
 
 While at "fictionary2023/react-app/my-app/" run the following code in terminal to start a local react server:
 
-`npm start`
+```bash
+npm start
+```
+
+
+
+
 
 Open http://localhost:3000 to view website in your browser.
+
+
 
 ## Handling Branches
 ---------------
@@ -80,3 +116,4 @@ If you need to do work using the changes you just made that you want merged with
 If you have any questions about any of the steps above, ask Max.
 
 p.s. Is this process cumbersome? Yes. Is it necessary for this project? Probably not. Is it what I (Max) did for my real world job? Yes. This is why I want to practice with these hoops to jump through since this may very well be how it is at a real job.
+
