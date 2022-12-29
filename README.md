@@ -2,7 +2,7 @@
 
 fictionary.net would be a wordle-like game based on the game https://en.wikipedia.org/wiki/Fictionary.  Each day there's a new obscure word, and the game is to identify which out of 5 definitions is correct.
 
-
+(https://docs.google.com/drawings/d/1I8_icTFBZM_MzKM1-fs7nDW-LWbkYWiw6U-BY3G8DSE/edit)
 
 # Getting Started 
 
