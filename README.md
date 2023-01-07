@@ -73,9 +73,6 @@ npm start
 Open http://localhost:3000 to view website in your browser.
 
 
-
-
-
 ## Handling Branches
 ---------------
 
