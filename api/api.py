@@ -1,10 +1,11 @@
-from structures import Game
+from structures import Database
+from database import FictionaryDB
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-game: Game = None
+database: Database = FictionaryDB('sampledb.json')
 
 app.add_middleware(
     CORSMiddleware, 
@@ -18,8 +19,12 @@ app.add_middleware(
 def read_root():
     return {"Welcome to": "Fictionary"}
 
-@app.get('/game/{seed}')
-def read_game():
-    return game.get_game()
+@app.get('/game/pair/')
+def read_game() -> tuple[str, str]:
+    return database.get_pair()
+
+@app.get('/game/definitions/{seed}')
+def read_game(seed: int) -> list[str]:
+    return database.get_fake_definitions(seed)
 
 # Dependencies: fastapi, uvicorn
