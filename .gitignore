@@ -1,2 +1,5 @@
 .DS_Store
 node_modules
+api/__pycache__/
+.venv/
+.Rhistory

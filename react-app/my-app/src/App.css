@@ -27,16 +27,10 @@
 }
 
 .App-definitions {
-  display: flex;
-  border: 10px solid #000000;
-  background: #0F0F0F0F;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
   margin-top: 1rem;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 10rem;
   width: 50rem;
-  color:  #ffffff;
+  font-size: 25px;
+  border-radius: 10px;
 }
 
