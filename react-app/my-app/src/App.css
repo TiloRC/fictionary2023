@@ -27,8 +27,10 @@
 }
 
 .App-definitions {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 10rem;
   width: 50rem;
+  font-size: 25px;
+  border-radius: 10px;
 }
 
