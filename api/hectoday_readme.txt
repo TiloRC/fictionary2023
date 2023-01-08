@@ -1,0 +1,1 @@
+Hectoday1.json contains data for 100 days as a list 100 long. Each day contains 5 pairs of word and definition. The first word definition pair is the true word and definition. Although only the definitions of the next four words for the most part are used, we may want to display what word they define after.
