@@ -20,6 +20,7 @@
   align-items: center;
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   font-size: 4rem;
   width: 25rem;
@@ -32,5 +33,17 @@
   width: 50rem;
   font-size: 25px;
   border-radius: 10px;
+  font-family: "Monaco", monospace;
+  background-color: white;
+}
+
+.App-definitions:hover{
+  background-color: lightgray;
+  transition: background-color 0.15s ease-in;
+}
+
+.App-definitions:active{
+  background-color: rgb(167, 167, 167);
+  transition: none
 }
 

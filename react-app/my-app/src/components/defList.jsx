@@ -15,7 +15,7 @@ class DefList extends Component {
       <div class="columns is-multiline ">
         {this.state.def.map((def) => (
           <button
-            class="App-definitions column  is-block is-light is-large is-responsive is-three-fifths is-offset-one-fifth is-flex-wrap-wrap"
+            class="App-definitions column is-block is-light is-large is-responsive is-three-fifths is-offset-one-fifth is-flex-wrap-wrap"
             onClick={() => {
               alert("inline alert");
             }}
