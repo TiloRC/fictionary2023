@@ -9,12 +9,7 @@ class Game extends Component {
         <div className="column is-three-quarters">
           <div className="card">
             <header className="card-header">
-              <p className="card-header-title">
-                Dailyword
-                <span className="px-1 has-text-weight-normal">
-                  is defined as:
-                </span>
-              </p>
+              <p className="card-header-title">Dailyword</p>
             </header>
             <div className="card-content">
               <div className="content">
