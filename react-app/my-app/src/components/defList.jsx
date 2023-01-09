@@ -14,15 +14,16 @@ class DefList extends Component {
     return (
       <div className="columns is-multiline is-flex-direction-column">
         {this.state.def.map((def) => (
-          <div className="pt-1" key={def}>
-            <button
-              class="column is-block is-light is-large is-responsive has-text-left is-full"
-              onClick={() => {
-                alert("inline alert");
-              }}
-            >
-              {def}
-            </button>
+          <div
+            className="pt-1"
+            key={def}
+            onClick={() => {
+              alert("inline alert");
+            }}
+          >
+            <div class="box py-2 px-2 is-clickable">
+              <p>{def}</p>
+            </div>
           </div>
         ))}
       </div>

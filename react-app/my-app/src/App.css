@@ -34,3 +34,13 @@
   width: 50rem;
 }
 */
+
+
+.wrap-button-text {
+  height: max-content;
+  white-space: inherit;
+}
+.button {
+  height: 100% !important;
+  white-space: normal !important;
+}
