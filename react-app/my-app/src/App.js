@@ -1,6 +1,7 @@
 import "./App.css";
 import DefList from "./components/defList";
 import HowTo from "./components/howTo";
+import Game from "./components/game";
 import "./index.css";
 
 function App() {
@@ -17,26 +18,7 @@ function App() {
       </div>
 
       <HowTo />
-
-      <div className="columns is-centered">
-        <div className="column is-three-quarters">
-          <div className="card">
-            <header className="card-header">
-              <p className="card-header-title">
-                Dailyword
-                <span className="px-1 has-text-weight-normal">
-                  is defined as:
-                </span>
-              </p>
-            </header>
-            <div className="card-content">
-              <div className="content">
-                <DefList />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Game />
     </div>
   );
 }
