@@ -1,5 +1,6 @@
 import "./App.css";
 import DefList from "./components/defList";
+import HowTo from "./components/howTo";
 import "./index.css";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
           <header className="title">FICTIONARY</header>
         </div>
       </div>
+
+      <HowTo />
 
       <div className="columns is-centered">
         <div className="column is-three-quarters">
