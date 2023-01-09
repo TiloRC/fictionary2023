@@ -14,13 +14,12 @@ class DefList extends Component {
     return (
       <div className="columns is-multiline is-flex-direction-column">
         {this.state.def.map((def) => (
-          <div className="pt-1">
+          <div className="pt-1" key={def}>
             <button
               class="column is-block is-light is-large is-responsive has-text-left is-full"
               onClick={() => {
                 alert("inline alert");
               }}
-              key={def}
             >
               {def}
             </button>
