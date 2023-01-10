@@ -1,12 +1,9 @@
-from typing import Protocol
+from typing import Protocol, TypedDict
 
-class Database(Protocol):
-    
-    def get_pair(self) -> tuple[str, str]:
-        ...
+class GameDict(TypedDict):
+    answer: tuple[str, str]
+    decoys: tuple[str, str]
 
-    def get_fake_definitions(self, seed: int, count: int = 3) -> list[str]:
-        ...
-
-    def validate_pair(self, key, value) -> bool:
+class Database(Protocol):  
+    def get_game(self) -> tuple[str, str]:
         ...

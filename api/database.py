@@ -1,5 +1,4 @@
-from structures import Database
-from random import Random
+from structures import GameDict
 
 from json import dumps, loads
 from time import time
@@ -8,28 +7,31 @@ class Database:
     def __init__(self, data_path: str = "database.json"):
         self.path = data_path
         self.data: dict = None
-        self.data = self.load_json(data_path)
+        self.data = self.format_data(self.load_json(data_path))
     
-    def get_raw_pair(self, index: int) -> tuple[str, list[str]]:
-        return list(self.data.items())[index]
+    def get_game(self, index: int) -> GameDict:
+        return self.data[index]
 
-    def get_pair(self, index: int) -> tuple[str, str]:
-        kv_pair = self.get_raw_pair(index)
+    @staticmethod
+    def format_data(data: dict) -> list[GameDict]:
+        out = []
 
-        return (kv_pair[0], kv_pair[1][0])
-
-    def get_fake_definitions(self, index: int, seed: int = None, count: int = 3) -> list[str]:
-        kv_pair = self.get_raw_pair(index)
-
-        vals = kv_pair[1][1:]
-        return Random(seed).sample(vals, count)
-
-    def validate_pair(self, key, value) -> bool:
-        if key in self.data:
-            if value == self.data[key][0]:
-                return True
-
-        return False
+        for day in data:
+            ans: list[str, str] = None
+            decoys: list[list[str, str]] = []
+            for pair in day:
+                pair = tuple(pair)
+                if ans:
+                    decoys.append(pair)
+                else:
+                    ans = pair
+            
+            out.append(GameDict(
+                answer=ans,
+                decoys=decoys
+            ))
+    
+        return out
 
     @staticmethod
     def load_json(data_path: str) -> dict:
@@ -44,7 +46,7 @@ class Database:
 class FictionaryDB(Database):
     def __init__(self, data_path: str = "database.json"):
         super().__init__(data_path)
-        self.total_entries = len(self.data.keys())
+        self.total_entries = len(self.data)
 
     def days_since_epoch(self) -> int:
         return int(time() // (24 * 60 * 60))
@@ -52,9 +54,5 @@ class FictionaryDB(Database):
     def day_index(self) -> int:
         return self.days_since_epoch() % self.total_entries
 
-    def get_pair(self) -> tuple[str, str]:
-        return super().get_pair(self.day_index())
-
-    def get_fake_definitions(self, seed: int = None, count: int = 3) -> list[str]:
-        return super().get_fake_definitions(self.day_index(), seed, count)
-
+    def get_game(self) -> GameDict:
+        return super().get_game(self.day_index())
