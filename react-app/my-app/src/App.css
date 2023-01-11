@@ -49,11 +49,18 @@
 .definition {
   background-color: white;
 }
+
 .definition:hover {
   background-color: lightgray;
   transition: background-color 0.1s ease-in;
 }
-.definition:active {
-  background-color: orange;
+
+.definition[correct-choice="True"]:active {
+  background-color: green;
+  transition: background-color 0.0s ease-out;
+}
+
+.definition[correct-choice=False]:active {
+  background-color: red;
   transition: background-color 0.0s ease-out;
 }
