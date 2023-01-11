@@ -54,5 +54,8 @@ class FictionaryDB(Database):
     def day_index(self) -> int:
         return self.days_since_epoch() % self.total_entries
 
-    def get_game(self) -> GameDict:
+    def get_game(self, index: int = None) -> GameDict:
+        if index is not None:
+            return super().get_game(index)
+
         return super().get_game(self.day_index())
