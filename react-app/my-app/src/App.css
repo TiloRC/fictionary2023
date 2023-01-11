@@ -46,3 +46,14 @@
   height: 100% !important;
   white-space: normal !important;
 }
+.definition {
+  background-color: white;
+}
+.definition:hover {
+  background-color: lightgray;
+  transition: background-color 0.1s ease-in;
+}
+.definition:active {
+  background-color: orange;
+  transition: background-color 0.0s ease-out;
+}
