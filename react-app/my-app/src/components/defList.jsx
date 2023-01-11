@@ -21,7 +21,7 @@ class DefList extends Component {
               alert("inline alert");
             }}
           >
-            <div class="box py-2 px-2 is-clickable">
+            <div class="box definition py-2 px-2 is-clickable">
               <p>{def}</p>
             </div>
           </div>
