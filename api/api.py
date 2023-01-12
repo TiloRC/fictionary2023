@@ -23,4 +23,9 @@ def read_root():
 def read_game() -> GameDict:
     return database.get_game()
 
+@app.get('/game/{index}')
+def read_game(index: int = None) -> GameDict:
+    return database.get_game(index)
+
+
 # Dependencies: fastapi, uvicorn
